@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF614AE5EBEF55271C9A45F5 /* Pods_CoinRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DE696BAC44C13DDE688CFF /* Pods_CoinRate.framework */; };
 		FA2DDB87246D17E5004B8268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DDB86246D17E5004B8268 /* AppDelegate.swift */; };
 		FA2DDB89246D17E5004B8268 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DDB88246D17E5004B8268 /* SceneDelegate.swift */; };
 		FA2DDB8B246D17E5004B8268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DDB8A246D17E5004B8268 /* ViewController.swift */; };
@@ -18,9 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		68DE696BAC44C13DDE688CFF /* Pods_CoinRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D783F2497C8A10FF9FF33B2B /* Pods-CoinRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRate.debug.xcconfig"; path = "Target Support Files/Pods-CoinRate/Pods-CoinRate.debug.xcconfig"; sourceTree = "<group>"; };
-		D87BA3F549FD4560E70BF050 /* Pods-CoinRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRate.release.xcconfig"; path = "Target Support Files/Pods-CoinRate/Pods-CoinRate.release.xcconfig"; sourceTree = "<group>"; };
 		FA2DDB83246D17E5004B8268 /* CoinRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2DDB86246D17E5004B8268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2DDB88246D17E5004B8268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,26 +33,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF614AE5EBEF55271C9A45F5 /* Pods_CoinRate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8196F2500CE11F457F033616 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68DE696BAC44C13DDE688CFF /* Pods_CoinRate.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CB97AED95D2431A6DC22FEB4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D783F2497C8A10FF9FF33B2B /* Pods-CoinRate.debug.xcconfig */,
-				D87BA3F549FD4560E70BF050 /* Pods-CoinRate.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,7 +52,6 @@
 				FA2DDB85246D17E5004B8268 /* CoinRate */,
 				FA2DDB84246D17E5004B8268 /* Products */,
 				CB97AED95D2431A6DC22FEB4 /* Pods */,
-				8196F2500CE11F457F033616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +85,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2DDB97246D17E6004B8268 /* Build configuration list for PBXNativeTarget "CoinRate" */;
 			buildPhases = (
-				96A002A78116AD7D9967A4D9 /* [CP] Check Pods Manifest.lock */,
 				FA2DDB7F246D17E5004B8268 /* Sources */,
 				FA2DDB80246D17E5004B8268 /* Frameworks */,
 				FA2DDB81246D17E5004B8268 /* Resources */,
-				041FFC52F125BF7D07875F04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,48 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		041FFC52F125BF7D07875F04 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinRate/Pods-CoinRate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CoinRate/Pods-CoinRate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinRate/Pods-CoinRate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96A002A78116AD7D9967A4D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoinRate-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA2DDB7F246D17E5004B8268 /* Sources */ = {
@@ -354,7 +294,6 @@
 		};
 		FA2DDB98246D17E6004B8268 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D783F2497C8A10FF9FF33B2B /* Pods-CoinRate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,7 +312,6 @@
 		};
 		FA2DDB99246D17E6004B8268 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D87BA3F549FD4560E70BF050 /* Pods-CoinRate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
